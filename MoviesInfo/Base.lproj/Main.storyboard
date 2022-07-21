@@ -123,6 +123,12 @@
                             <constraint firstItem="sMP-17-X7I" firstAttribute="bottom" secondItem="3ON-n9-fPf" secondAttribute="bottom" id="g1i-Tn-8cZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="movieDisc" destination="anh-w6-asj" id="yqx-ku-AuI"/>
+                        <outlet property="movieImage" destination="eg9-1y-Nxs" id="Cx9-S5-n3f"/>
+                        <outlet property="movieReleaseDate" destination="LyC-0a-DC4" id="And-k4-Tjk"/>
+                        <outlet property="movieTitle" destination="aPL-ky-PoJ" id="Vho-Hb-geZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rYc-Rc-3aB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -50,6 +50,11 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="movieImage" destination="6mE-ZB-dkH" id="LLZ-Ix-Ttr"/>
+                <outlet property="movieReleaseDate" destination="j0A-Ea-ICc" id="YyB-zg-dkh"/>
+                <outlet property="movieTitle" destination="hG9-5J-wgM" id="s1U-B5-om2"/>
+            </connections>
             <point key="canvasLocation" x="137.68115942028987" y="154.6875"/>
         </tableViewCell>
     </objects>
