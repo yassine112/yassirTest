@@ -13,6 +13,7 @@ class NetworkConfig {
     static let shared = NetworkConfig()
     
     let apiKey = "c9856d0cb57c3f14bf75bdc6c063b8f3"
+    let imageBaseUrl = "https://image.tmdb.org/t/p/w500/"
     
     var webServices = [String: Any]()
     private let baseUrl = "https://api.themoviedb.org/3/"

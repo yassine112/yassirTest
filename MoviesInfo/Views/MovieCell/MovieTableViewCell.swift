@@ -22,7 +22,7 @@ class MovieTableViewCell: UITableViewCell {
     }
     
     func fill(using data: ResponseItem?) {
-        if let posterPath = data?.posterPath, let url = URL(string: "https://image.tmdb.org/t/p/w500/\(posterPath)") {
+        if let posterPath = data?.posterPath, let url = URL(string: "\(NetworkConfig.shared.imageBaseUrl)\(posterPath)") {
             movieImage.kf.setImage(with: url)
         }
         movieTitle.text = data?.title

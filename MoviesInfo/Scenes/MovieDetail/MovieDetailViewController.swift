@@ -27,14 +27,14 @@ class MovieDetailViewController: UIViewController, MovieDetailDisplayLogic, Stor
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        interactor?.getMoviesDetail(using: movieID)
     }
     
     // MARK: Display Logic
     
     func displayMovieDetail(_ movie: Movie) {
-        if let posterPath = movie.posterPath, let url = URL(string: "https://image.tmdb.org/t/p/w500/\(posterPath)") {
+        if let posterPath = movie.posterPath, let url = URL(string: "\(NetworkConfig.shared.imageBaseUrl)\(posterPath)") {
             movieImage.kf.setImage(with: url)
         }
         
@@ -44,7 +44,7 @@ class MovieDetailViewController: UIViewController, MovieDetailDisplayLogic, Stor
     }
     
     func displayError(_ message: String) {
-        
+        print(message)
     }
 
 }
